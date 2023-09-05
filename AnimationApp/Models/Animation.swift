@@ -25,7 +25,8 @@ struct Animation {
             curve: curves.randomElement() ?? "spring",
             force: Double.random(in: 0.50...3),
             duration: Double.random(in: 0.50...3),
-            delay: 1)
+            delay: Double.random(in: 0.80...1)
+            )
         
         return animation
     }
