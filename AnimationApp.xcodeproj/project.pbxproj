@@ -13,6 +13,8 @@
 		606E34EA2AA70EB4009A3262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606E34E82AA70EB4009A3262 /* Main.storyboard */; };
 		606E34EC2AA70EB5009A3262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606E34EB2AA70EB5009A3262 /* Assets.xcassets */; };
 		606E34EF2AA70EB5009A3262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606E34ED2AA70EB5009A3262 /* LaunchScreen.storyboard */; };
+		60FDE5052AA713C500EA785B /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FDE5042AA713C500EA785B /* Animation.swift */; };
+		60FDE50D2AA7148C00EA785B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FDE50C2AA7148C00EA785B /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		606E34EB2AA70EB5009A3262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606E34EE2AA70EB5009A3262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		606E34F02AA70EB5009A3262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60FDE5042AA713C500EA785B /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		60FDE50C2AA7148C00EA785B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		606E34E12AA70EB4009A3262 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				606E34E22AA70EB4009A3262 /* AppDelegate.swift */,
-				606E34E42AA70EB4009A3262 /* SceneDelegate.swift */,
-				606E34E62AA70EB4009A3262 /* ViewController.swift */,
-				606E34E82AA70EB4009A3262 /* Main.storyboard */,
-				606E34EB2AA70EB5009A3262 /* Assets.xcassets */,
-				606E34ED2AA70EB5009A3262 /* LaunchScreen.storyboard */,
-				606E34F02AA70EB5009A3262 /* Info.plist */,
+				60FDE5072AA713F000EA785B /* App */,
+				60FDE5082AA713FB00EA785B /* ViewControllers */,
+				60FDE5062AA713DE00EA785B /* Models */,
+				60FDE50B2AA7146200EA785B /* Services */,
+				60FDE5092AA7140900EA785B /* Storyboard */,
+				60FDE50A2AA7142A00EA785B /* Resourses */,
 			);
 			path = AnimationApp;
+			sourceTree = "<group>";
+		};
+		60FDE5062AA713DE00EA785B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60FDE5042AA713C500EA785B /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60FDE5072AA713F000EA785B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				606E34E22AA70EB4009A3262 /* AppDelegate.swift */,
+				606E34E42AA70EB4009A3262 /* SceneDelegate.swift */,
+				606E34F02AA70EB5009A3262 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60FDE5082AA713FB00EA785B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				606E34E62AA70EB4009A3262 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		60FDE5092AA7140900EA785B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				606E34E82AA70EB4009A3262 /* Main.storyboard */,
+				606E34ED2AA70EB5009A3262 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		60FDE50A2AA7142A00EA785B /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				606E34EB2AA70EB5009A3262 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		60FDE50B2AA7146200EA785B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				60FDE50C2AA7148C00EA785B /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +194,8 @@
 			files = (
 				606E34E72AA70EB4009A3262 /* ViewController.swift in Sources */,
 				606E34E32AA70EB4009A3262 /* AppDelegate.swift in Sources */,
+				60FDE5052AA713C500EA785B /* Animation.swift in Sources */,
+				60FDE50D2AA7148C00EA785B /* DataStore.swift in Sources */,
 				606E34E52AA70EB4009A3262 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
