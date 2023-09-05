@@ -17,14 +17,16 @@ struct Animation {
         
         let dataStore = DataStore.shared
         
-        let animations = dataStore.animations.shuffled()
-        let curves = dataStore.curves.shuffled()
-        
-        return Animation(
-            title: animations.first ?? "pop",
-            curve: curves.first ?? "spring",
-            force: Double.random(in: 0.10...3),
-            duration: Double.random(in: 0.10...2),
+        let titles = dataStore.titles
+        let curves = dataStore.curves
+                
+        let animation = Animation(
+            title: titles.randomElement() ?? "pop",
+            curve: curves.randomElement() ?? "spring",
+            force: Double.random(in: 0.50...3),
+            duration: Double.random(in: 0.50...3),
             delay: 1)
+        
+        return animation
     }
 }

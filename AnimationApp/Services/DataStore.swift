@@ -11,7 +11,7 @@ final class DataStore {
     
     static let shared = DataStore()
     
-    let animations = [
+    let titles = [
         "pop",
         "slideLeft",
         "slideRight",

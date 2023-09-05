@@ -16,20 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-F4-41i">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-F4-41i" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="50" y="99.000000000000014" width="293" height="156.33333333333337"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OxA-F4-41i" secondAttribute="height" multiplier="15:8" id="iKG-fG-5Vg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oC-kC-IIx">
-                                <rect key="frame" x="50" y="693" width="293" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oC-kC-IIx" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="50" y="695" width="293" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Run"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runSpringAnimationDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afG-gT-5C6"/>
+                                    <action selector="runSpringAnimationDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cML-t0-Bqe"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tgP-Ma-zMo">
@@ -83,6 +90,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="OxA-F4-41i" id="emb-BY-Ke0"/>
                         <outlet property="curveLabel" destination="Ono-EU-7Mi" id="rxg-Ry-u9F"/>
                         <outlet property="delayLabel" destination="8ek-2A-iwG" id="aDk-KH-yRQ"/>
                         <outlet property="durationLabel" destination="SeO-FV-iIh" id="IKB-sO-Tq6"/>
