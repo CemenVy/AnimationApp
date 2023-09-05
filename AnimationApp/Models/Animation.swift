@@ -13,5 +13,18 @@ struct Animation {
     var duration: Double
     var delay: Double
     
-    static func getAnimation() {}
+    static func getAnimation() -> Animation {
+        
+        let dataStore = DataStore.shared
+        
+        let animations = dataStore.animations.shuffled()
+        let curves = dataStore.curves.shuffled()
+        
+        return Animation(
+            title: animations.first ?? "pop",
+            curve: curves.first ?? "spring",
+            force: Double.random(in: 0.10...3),
+            duration: Double.random(in: 0.10...2),
+            delay: 1)
+    }
 }
