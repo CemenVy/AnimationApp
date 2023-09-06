@@ -32,14 +32,32 @@ final class AnimationViewController: UIViewController {
     
     // MARK: - IB Actions
     @IBAction func runSpringAnimationDidTapped(_ sender: SpringButton) {
-        updateLabelValue()
-        animationView.animation = animation.title
-        animationView.curve = animation.curve
-        animationView.force = animation.force
-        animationView.duration = animation.duration
-        animationView.delay = animation.delay
-        animationView.animate()
         
+        let labels = [
+            presentLabel,
+            curveLabel,
+            forceLabel,
+            durationLabel,
+            delayLabel
+        ]
+        
+        for label in labels {
+            label?.animation = "pop"
+            label?.curve = "ease"
+            label?.force = 1.5
+            label?.duration = 0.50
+            label?.delay = 0
+            label?.animate()
+        }
+
+            animationView.animation = animation.title
+            animationView.curve = animation.curve
+            animationView.force = animation.force
+            animationView.duration = animation.duration
+            animationView.delay = animation.delay
+            animationView.animate()
+        
+        updateLabelValue()
         animation = Animation.getAnimation()
         sender.setTitle("Run \(animation.title)", for: .normal)
     }
@@ -54,4 +72,5 @@ final class AnimationViewController: UIViewController {
     }
     
 }
+
 
