@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oC-kC-IIx" customClass="SpringButton" customModule="SpringAnimation">
-                                <rect key="frame" x="50" y="748" width="293" height="30"/>
+                                <rect key="frame" x="59" y="748" width="275" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Run">
@@ -47,21 +47,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ee-jj-1J5"/>
-                            <constraint firstItem="OxA-F4-41i" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.18" id="7kT-7E-2ev"/>
-                            <constraint firstItem="OxA-F4-41i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="H3k-3J-XLq"/>
-                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="height" secondItem="OxA-F4-41i" secondAttribute="height" id="Haz-tI-kSH"/>
-                            <constraint firstItem="3oC-kC-IIx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KEs-Gf-Qwy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3oC-kC-IIx" secondAttribute="bottom" constant="40" id="Tao-74-Zeu"/>
-                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VCA-oq-Olg"/>
-                            <constraint firstItem="3oC-kC-IIx" firstAttribute="width" secondItem="OxA-F4-41i" secondAttribute="width" multiplier="1.06545" id="cI3-P5-6qE"/>
-                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="width" secondItem="OxA-F4-41i" secondAttribute="width" id="e8O-b6-Oli"/>
-                            <constraint firstItem="OxA-F4-41i" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="h1T-zN-fFX"/>
-                            <constraint firstItem="OxA-F4-41i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXv-Uf-yYU"/>
+                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="width" secondItem="OxA-F4-41i" secondAttribute="width" id="4ER-Or-zfB"/>
+                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="height" secondItem="OxA-F4-41i" secondAttribute="height" id="8jt-5N-jDL"/>
+                            <constraint firstItem="OxA-F4-41i" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Fop-Ed-QBT"/>
+                            <constraint firstItem="OxA-F4-41i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Ph1-qK-5mh"/>
+                            <constraint firstItem="3oC-kC-IIx" firstAttribute="width" secondItem="OxA-F4-41i" secondAttribute="width" id="Qzq-5s-fI3"/>
+                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UPc-xZ-MaA"/>
+                            <constraint firstItem="OxA-F4-41i" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.18" id="i6K-gP-LkY"/>
+                            <constraint firstItem="OxA-F4-41i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="njj-v3-mny"/>
+                            <constraint firstItem="DyZ-Fe-J9q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oBm-WG-yXq"/>
+                            <constraint firstItem="3oC-kC-IIx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="slA-61-ruP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3oC-kC-IIx" secondAttribute="bottom" constant="40" id="yjJ-dc-OHk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationLabel" destination="DyZ-Fe-J9q" id="42d-dJ-7Av"/>
+                        <outlet property="animationLabel" destination="DyZ-Fe-J9q" id="0hs-U7-Gv8"/>
                         <outlet property="animationView" destination="OxA-F4-41i" id="emb-BY-Ke0"/>
                     </connections>
                 </viewController>
